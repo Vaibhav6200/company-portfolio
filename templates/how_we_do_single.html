@@ -1,0 +1,229 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} How we do Single {% endblock %}
+{% block content %}
+
+    {% include 'includes/navbar.html' %}
+
+
+
+
+
+        <!-- Our Field Hero -->
+        <section class="hero-service-wrap hero-section-wrap hero-career-wrap hero-how-we-do-single-wrap">
+            <div class="hero-section-content-wrap">
+                <img src="{% static 'img/bg-shape-1.svg' %} " alt="Shape" class="animation-slide-left bg-shape" />
+                <div class="custom-container">
+                    <div class="hero-portfolio-body">
+                        <div class="hero-section-content text-center">
+                            <h5 class="section-subtitle">Brainstroming</h5>
+                            <h1 class="section-title fade-in">Brainstroming your ideas</h1>
+                            <p>By fostering a free-flowing exchange of thoughts, brainstorming stimulates
+                                innovation, problem-solving, and fresh perspectives.</p>
+                            <a href="contact.html" class="theme-btn">Book an appointment now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- How we do Details Hero Image -->
+        <section class="new-release-hero-img-area">
+            <div class="custom-container">
+                <div class="new-release-img-box">
+                    <img src="{% static 'img/how-we-do-single.jpg' %} " alt="How we do Details"/>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Blog Content -->
+        <section class="blog-details-area how-we-do-details-area">
+            <div class="custom-container">
+                <div class="blog-details-body">
+                    <div class="blog-details-inner">
+
+                        <div class="blog-details-introduction">
+                            <h1>Introduction</h1>
+                            <p>In today's fast-paced and technologically advanced world, businesses rely heavily on Information Technology (IT) services to remain competitive, innovative, and efficient. From streamlining operations to enhancing customer experience</p>
+                            <p>IT services play a crucial role in transforming businesses across all industries. In this blog, we will explore the significance of IT services, the key benefits they offer, and how they can empower your business to reach new heights.</p>
+                            <p>IT services encompass a wide range of solutions aimed at managing, optimizing, and supporting the technology infrastructure of a business. This includes hardware and software management, network administration, cybersecurity, data backup and recovery, cloud services, and more. Whether you run a small startup or a large enterprise, leveraging the right IT services can have a profound impact on your business's success. One of the primary benefits of adopting IT services is their ability to streamline various business operations. Automated processes, such as enterprise resource planning (ERP) systems, can integrate different departments and make data accessible in real-time.</p>
+                            <img src="{% static 'img/how-we-do-single-2.jpg' %} " alt="How we do details" />
+                            <p>As businesses increasingly rely on digital technologies, the risk of cyber threats also grows. A robust IT service provider will implement cutting-edge cybersecurity measures to safeguard your valuable data, sensitive information, and intellectual property. From firewall protection to regular vulnerability assessments, a comprehensive security strategy ensures that your business stays protected against cyberattacks.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- About -->
+        <section class="about-service3-area">
+            <div class="custom-container">
+                <div class="custom-row align-items-center">
+                    <div class="img-box">
+                        <img src="{% static 'img/about-service-3.png' %} " alt="About" />
+                    </div>
+
+                    <div class="content-box">
+                        <h1>Why our services are <br>
+                            better than others?</h1>
+                        <p>We don't believe in a one-size-fit-all approach. Our services are carefully customized to suit your specific need, ensuring you to achieve your goals.</p>
+                        <p>We believe in delivering value that extends  your beyond the immediate project. Our services are designed to provide a long-term benefits.</p>
+                        <ul>
+                            <li>
+                                <i class="las la-check"></i> PPD Development
+                            </li>
+                            <li>
+                                <i class="las la-check"></i> Quick Response
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact -->
+        <section class="contact-area">
+            <div class="custom-container">
+                <div class="custom-row">
+                    <div class="contact-form-wrap">
+                        <div class="contact-form-body">
+                            <h5 class="section-subtitle">Contact</h5>
+                            <h1 class="section-title">Lets get in touch</h1>
+                            <p>You can reach us anytime via <a href="mailto:bluebase@mail.com">bluebase@mail.com</a></p>
+                            <form action="https://wpriverthemes.com/HTML/synck/assets/mail/contact.php" method="POST" class="contact-form">
+                                <div class="input-row">
+                                    <div class="input-group">
+                                        <label for="first_name">First Name</label>
+                                        <input id="first_name" type="text" name="first_name" placeholder="First Name" />
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="last_name">Last Name</label>
+                                        <input id="last_name" type="text" name="last_name" placeholder="Last Name" />
+                                    </div>
+                                </div>
+                                <div class="input-row">
+                                    <div class="input-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" name="email" placeholder="Your Email" />
+                                    </div>
+                                </div>
+                                <div class="input-row">
+                                    <div class="input-group phone-number">
+                                        <select class="number-prefix">
+                                            <option value="uk">UK</option>
+                                            <option value="us">US</option>
+                                        </select>
+                                        <label for="phone_number">Phone Number</label>
+                                        <input id="phone_number" type="text" name="phone_number" placeholder="Your Number" />
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="country">Country</label>
+                                        <input type="text" id="homeland" name="country" placeholder="Your Country" />
+                                    </div>
+                                </div>
+                                <div class="input-row">
+                                    <div class="input-group">
+                                        <label for="message">Message</label>
+                                        <textarea name="message" id="message" placeholder="Leave us a message...."></textarea>
+                                    </div>
+                                </div>
+                                <div class="input-row">
+                                    <div class="input-group input-checkbox">
+                                        <input type="checkbox" id="privacy_policy_accept">
+                                        <label for="privacy_policy_accept">You agree to our <a href="#">terms and conditions.</a></label>
+                                    </div>
+                                </div>
+
+                                <div class="input-row">
+                                    <div class="input-group">
+                                        <button id="submit" class="theme-btn">Get Started</button>
+                                    </div>
+                                </div>
+                                <!-- Alert Message -->
+                                <div class="input-row">
+                                    <div class="input-group alert-notification">
+                                        <div id="alert-message" class="alert-msg"></div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="contact-experience">
+                        <ul>
+                            <li>
+                                <h1>22+ <span>Years</span></h1>
+                                <p>Field Experience </p>
+                            </li>
+                            <li>
+                                <h1>950+ <span>Projects</span></h1>
+                                <p>Done Around World </p>
+                            </li>
+                            <li>
+                                <h1>99%</h1>
+                                <p>Client Satisfaction</p>
+                            </li>
+                            <li>
+                                <h1>1995+ <span>Year</span></h1>
+                                <p>Established On</p>
+                            </li>
+                            <li>
+                                <h1>2 <span>Mins</span></h1>
+                                <p>Response Time</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="contact-infos">
+                        <div class="contact-infos-inner">
+                            <div class="contact-info">
+                                <img src="{% static 'img/support-icon.svg' %} " alt="Support" />
+                                <h3>Contact Info</h3>
+                                <p>
+                                    +1 455 1482 236 <br>
+                                    Bluebase@mail.com
+                                </p>
+                            </div>
+                            <div class="contact-office-info contact-info">
+                                <img src="{% static 'img/map-icon.svg' %} " alt="Map" />
+                                <h3>Visit our office</h3>
+                                <p>16/9, Down Street
+                                    Edinburgh, Scotland
+                                    United Kingdom</p>
+                            </div>
+
+                            <ul class="contact-social-links">
+                                <li>
+                                    <a href="#">
+                                        <i class="iconoir-dribbble"></i> Dribbble
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="iconoir-twitter"></i> Twitter
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="iconoir-instagram"></i> Instagram
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="iconoir-linkedin"></i> linkedin
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {% include 'includes/footer.html' %}
+        {% endblock %}

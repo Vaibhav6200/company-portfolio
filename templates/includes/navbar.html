@@ -1,0 +1,350 @@
+{% load static %}
+
+<!-- Header Bar -->
+<div class="header-bar">
+    <div class="custom-container">
+        <div class="header-bar-body d-flex align-items-center justify-content-between">
+            <div class="left">
+                <select class="country-select" name="country" id="country">
+                    <option value="en">EN</option>
+                    <option value="uk">UK</option>
+                    <option value="dz">DZ</option>
+                </select>
+            </div>
+            <div class="right">
+                <p>
+                    Level up your business with <a href="about.html" data-word="Solvify Hub." id="dataWord">Solvify Hub.</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Header -->
+<header class="header-area">
+
+    <div class="custom-container">
+        <div class="custom-row align-items-center justify-content-between">
+            <div class="header-left d-flex align-items-center">
+                <a href="{% url 'solvifyhub:index' %}" class="logo" style="color: black; font-weight: bold; font-size: 24px;">
+                    Solvify Hub
+                    <!-- <img src="{% static 'img/logo.svg' %} " alt="Logo" /> -->
+                </a>
+
+                <div class="header-left-right">
+                    <a href="{% url 'solvifyhub:contact' %}" class="theme-btn">Contact Us</a>
+                    <span class="menu-bar">
+                        <i class="las la-bars"></i>
+                    </span>
+                </div>
+                <nav class="navbar-wrapper">
+                    <span class="close-menu-bar">
+                        <i class="las la-times"></i>
+                    </span>
+                    <ul>
+                        <li class="dropdown-menu-item">
+                            <a href="{% url 'solvifyhub:index' %}">Home</a>
+                            <span class="dropdown-menu-item-icon">
+                                <i class="las la-angle-down"></i>
+                            </span>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="{% url 'solvifyhub:index' %}">IT Services</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'solvifyhub:business_consulting' %}">Business Consulting</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mega-menu-item">
+                            <a href="{% url 'solvifyhub:company' %}">Company</a>
+                            <span class="dropdown-menu-item-icon">
+                                <i class="las la-angle-down"></i>
+                            </span>
+                            <div class="mega-menu mega-menu-company">
+                                <div class="mega-menu-inner">
+                                    <div class="custom-container d-flex">
+                                        <div class="left">
+                                            <div class="mega-menu-link-wrap d-flex justify-content-between">
+                                                <div class="mega-menu-link">
+                                                    <h3>Get Started</h3>
+                                                    <ul>
+                                                        <li><a href="#">Setup 101</a></li>
+                                                        <li><a href="#">Adding users</a></li>
+                                                        <li><a href="#">Video tutorials</a></li>
+                                                        <li><a href="#">Libraries and SDKs</a></li>
+                                                        <li><a href="#">Plugins</a></li>
+                                                        <li><a href="#">Templates</a></li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="mega-menu-links d-flex">
+                                                    <div class="mega-menu-link">
+                                                        <h3>Company</h3>
+                                                        <ul>
+                                                            <li><a href="{% url 'solvifyhub:about' %}">About Us</a></li>
+                                                            <li><a href="{% url 'solvifyhub:partner' %}">Partners</a></li>
+                                                            <li><a href="{% url 'solvifyhub:career' %}">Careers</a></li>
+                                                            <li><a href="{% url 'solvifyhub:event' %}">Events</a></li>
+                                                            <li><a href="{% url 'solvifyhub:team' %}">Team</a></li>
+                                                            <li><a href="{% url 'solvifyhub:blog' %}">Blog</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="mega-menu-link">
+                                                        <h3>Product</h3>
+                                                        <ul>
+                                                            <li><a href="{% url 'solvifyhub:overview' %}">Overview</a></li>
+                                                            <li><a href="{% url 'solvifyhub:pricing' %}">Pricing</a></li>
+                                                            <li><a href="{% url 'solvifyhub:feature' %}">Features</a></li>
+                                                            <li><a href="{% url 'solvifyhub:case_studie' %}">Case Studies</a></li>
+                                                            <li><a href="{% url 'solvifyhub:new_release' %}">New Releases</a></li>
+                                                            <li><a href="{% url 'solvifyhub:solution' %}">Solutions</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="mega-menu-link">
+                                                        <h3>Legal</h3>
+                                                        <ul>
+                                                            <li><a href="#">Licenses</a></li>
+                                                            <li><a href="#">Settings</a></li>
+                                                            <li><a href="#">Cookies</a></li>
+                                                            <li><a href="#">Document</a></li>
+                                                            <li><a href="#">Terms</a></li>
+                                                            <li><a href="#">Privacy</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                class="mega-meu-footer d-flex align-items-center justify-content-between w-full">
+                                                <ul class="mega-menu-social d-flex align-items-center">
+                                                    <li><a href="#"><i class="iconoir-dribbble"></i></a></li>
+                                                    <li><a href="#"><i class="iconoir-twitter"></i></a></li>
+                                                    <li><a href="#"><i class="iconoir-instagram"></i></a></li>
+                                                    <li><a href="#"><i class="iconoir-linkedin"></i></a></li>
+                                                </ul>
+
+                                                <p>Looking for new career? <a href="{% url 'solvifyhub:career' %}">We're hiring</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <div class="mega-menu-ads">
+                                                <img src="{% static 'img/iphone-13-1.jpg' %} " alt="Iphone" />
+                                                <h2>Solution in your hand</h2>
+                                                <p>Develop IT solutions based on the<br> analysis phase.</p>
+                                                <a href="{% url 'solvifyhub:case_studie_single' %}">View more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mega-menu-item">
+                            <a href="{% url 'solvifyhub:portfolio' %}">Portfolio</a>
+                            <span class="dropdown-menu-item-icon">
+                                <i class="las la-angle-down"></i>
+                            </span>
+                            <div class="mega-menu mega-menu-portfolio">
+                                <div class="mega-menu-inner">
+                                    <div class="custom-container d-flex">
+                                        <div class="left">
+                                            <div
+                                                class="mega-menu-link-wrap d-flex align-items-start justify-content-between">
+                                                <div class="mega-menu-portfolio-card">
+                                                    <div class="img-box">
+                                                        <img src="{% static 'img/portfolio-mega-menu-1.jpg' %} "
+                                                            alt="Portfolio" />
+                                                    </div>
+                                                    <div class="content-box">
+                                                        <h3><a href="{% url 'solvifyhub:portfolio_details' %}">E-commerce</a></h3>
+                                                        <p>we undertook a project to <br>migrate their existing.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="mega-menu-portfolio-card">
+                                                    <div class="img-box">
+                                                        <img src="{% static 'img/portfolio-mega-menu-2.jpg' %} "
+                                                            alt="Portfolio" />
+                                                    </div>
+                                                    <div class="content-box">
+                                                        <h3><a href="{% url 'solvifyhub:portfolio_details' %}">App Development</a></h3>
+                                                        <p>The mobile application has <br>significantly
+                                                            improved.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="mega-menu-portfolio-card">
+                                                    <div class="img-box">
+                                                        <img src="{% static 'img/portfolio-mega-menu-3.jpg' %} "
+                                                            alt="Portfolio" />
+                                                    </div>
+                                                    <div class="content-box">
+                                                        <h3><a href="{% url 'solvifyhub:portfolio_details' %}">SAAS Integration</a></h3>
+                                                        <p>We partnered with DEF to <br>upgrade their outdated
+                                                            IT.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="mega-menu-portfolio-card">
+                                                    <div class="img-box">
+                                                        <img src="{% static 'img/portfolio-mega-menu-4.jpg' %} "
+                                                            alt="Portfolio" />
+                                                    </div>
+                                                    <div class="content-box">
+                                                        <h3><a href="{% url 'solvifyhub:portfolio_details' %}">Virtual Reality</a></h3>
+                                                        <p>Enter into the virtual reality <br>
+                                                            world for real experience.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                class="mega-meu-footer d-flex align-items-center justify-content-between w-full">
+                                                <ul class="mega-menu-social d-flex align-items-center">
+                                                    <li><a href="#"><i class="iconoir-dribbble"></i></a></li>
+                                                    <li><a href="#"><i class="iconoir-twitter"></i></a></li>
+                                                    <li><a href="#"><i class="iconoir-instagram"></i></a></li>
+                                                    <li><a href="#"><i class="iconoir-linkedin"></i></a></li>
+                                                </ul>
+
+                                                <p>
+                                                    <a href="{% url 'solvifyhub:portfolio' %}">View Portfolio <i class="iconoir-arrow-up-right"></i></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <div class="mega-menu-ads">
+                                                <img src="{% static 'img/macbook.jpg' %} " alt="iPad" />
+                                                <h2>Mobile app for a new era</h2>
+                                                <p>Download slack in your mobile for <br>
+                                                    your daily usage.</p>
+                                                <a href="{% url 'solvifyhub:case_studie_single' %}">View more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mega-menu-item">
+                            <a href="{% url 'solvifyhub:service' %}">Services</a>
+                            <span class="dropdown-menu-item-icon">
+                                <i class="las la-angle-down"></i>
+                            </span>
+                            <div class="mega-menu">
+                                <div class="mega-menu-inner">
+                                    <div class="custom-container d-flex">
+                                        <div class="left">
+                                            <div
+                                                class="mega-menu-link-wrap d-flex align-items-start justify-content-between">
+                                                <div class="mega-menu-service-cards align-items-start">
+                                                    <div class="mega-menu-service-card">
+                                                        <span class="icon">
+                                                            <img src="{% static 'img/hwd-icon-1.svg' %} "
+                                                                alt="Service" />
+                                                        </span>
+                                                        <div class="content">
+                                                            <h2><a href="{% url 'solvifyhub:how_we_do_single' %}">Brainstroming</a></h2>
+                                                            <p>Ideas</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mega-menu-service-card">
+                                                        <span class="icon">
+                                                            <img src="{% static 'img/hwd-icon-4.svg' %} "
+                                                                alt="Service" />
+                                                        </span>
+                                                        <div class="content">
+                                                                <h2><a href="{% url 'solvifyhub:how_we_do_single' %}">Product</a></h2>
+                                                            <p>Design</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mega-menu-service-card">
+                                                        <span class="icon">
+                                                            <img src="{% static 'img/hwd-icon-2.svg' %} "
+                                                                alt="Service" />
+                                                        </span>
+                                                        <div class="content">
+                                                                <h2><a href="{% url 'solvifyhub:how_we_do_single' %}">SEO</a></h2>
+                                                            <p>Optimization</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mega-menu-service-card">
+                                                        <span class="icon">
+                                                            <img src="{% static 'img/hwd-icon-3.svg' %} "
+                                                                alt="Service" />
+                                                        </span>
+                                                        <div class="content">
+                                                                <h2><a href="{% url 'solvifyhub:how_we_do_single' %}">Front-End</a></h2>
+                                                            <p>Development</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="mega-menu-links d-flex">
+                                                    <div class="mega-menu-link">
+                                                        <h3>Services</h3>
+                                                        <ul>
+                                                            <li><a href="{% url 'solvifyhub:service_details' %}">Development</a></li>
+                                                            <li><a href="{% url 'solvifyhub:service_details' %}">Web Design</a></li>
+                                                            <li><a href="{% url 'solvifyhub:service_details' %}">IT Support</a></li>
+                                                            <li><a href="{% url 'solvifyhub:service_details' %}">E-Commerce</a></li>
+                                                            <li><a href="{% url 'solvifyhub:service_details' %}">Cloud Things</a></li>
+                                                            <li><a href="{% url 'solvifyhub:service_details' %}">CRM Solutions</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="mega-menu-link">
+                                                        <h3>Our Fields</h3>
+                                                        <ul>
+                                                            <li><a href="{% url 'solvifyhub:our_field_details' %}">Healthcare</a></li>
+                                                            <li><a href="{% url 'solvifyhub:our_field_details' %}">Banks</a></li>
+                                                            <li><a href="{% url 'solvifyhub:our_field_details' %}">Logistics</a></li>
+                                                            <li><a href="{% url 'solvifyhub:our_field_details' %}">Supermarkets</a></li>
+                                                            <li><a href="{% url 'solvifyhub:our_field_details' %}">Industries</a></li>
+                                                            <li><a href="{% url 'solvifyhub:our_field_details' %}">Hotels</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                class="mega-meu-footer d-flex align-items-center justify-content-between w-full">
+                                                <ul class="mega-menu-social d-flex align-items-center">
+                                                    <li><a href="#"><i class="iconoir-dribbble"></i></a></li>
+                                                    <li><a href="#"><i class="iconoir-twitter"></i></a></li>
+                                                    <li><a href="#"><i class="iconoir-instagram"></i></a></li>
+                                                    <li><a href="#"><i class="iconoir-linkedin"></i></a></li>
+                                                </ul>
+
+                                                <p>Looking for new career? <a href="{% url 'solvifyhub:career' %}">We're hiring</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <div class="mega-menu-ads">
+                                                <img src="{% static 'img/ipad.jpg' %} " alt="iPad" />
+                                                <h2>Our product hits</h2>
+                                                <p>Our new best IT product of the <br>year 2023.</p>
+                                                <a href="{% url 'solvifyhub:case_studie_single' %}">View more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="{% url 'solvifyhub:faq' %}">FAQ</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-right">
+                <div class="header-contact-info d-flex align-items-center">
+                    <div class="phone-number">
+                        <a href="tel:+91-742-708-9473">
+                            Call Us
+                            <i class="iconoir-arrow-up-right"></i>
+                        </a>
+                        +91-742-708-9473
+                    </div>
+                    <a href="{% url 'solvifyhub:contact' %}" class="theme-btn">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
