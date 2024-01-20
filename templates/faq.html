@@ -50,8 +50,25 @@
                                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                                         data-parent="#accordion">
                                         <div class="card-body">
-                                            At our IT service company, we give offer a comprehensive range of server solutions,
-                                            including managed IT in services, network infrastructure setup.
+                                            At our IT service company, we give offer a comprehensive range of Web, App and Cloud solutions,
+                                            including managed IT in services and network infrastructure setup.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="faq-box">
+                                    <h5 class="card-header" id="headingSix">
+                                        <button data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                            aria-expanded="false" aria-controls="collapseSix">
+                                            <div class="icon">
+                                                <img src="{% static 'img/question-icon.svg' %} " alt="Icon" />
+                                            </div> How can we get started with your services?
+                                        </button>
+                                    </h5>
+
+                                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+                                        data-parent="#accordion2">
+                                        <div class="card-body">
+                                            To get started with our services, simply contact us through our website or give us a call. Our team will guide you through the process, ensuring a smooth start.
                                         </div>
                                     </div>
                                 </div>
@@ -68,27 +85,11 @@
                                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                                         data-parent="#accordion">
                                         <div class="card-body">
-                                            Yes, we provide IT training tailored to your business needs. Our training is programs cover various IT aspects, our high including software usage, cybersecurity
+                                            Absolutely! We provide comprehensive training sessions to ensure your team is proficient with the tools and processes we implement, fostering a smooth transition and ongoing success.
                                         </div>
                                     </div>
                                 </div>
-                                <div class="faq-box">
-                                    <h5 class="card-header" id="headingThree">
-                                        <button data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                            aria-expanded="false" aria-controls="collapseThree">
-                                            <div class="icon">
-                                                <img src="{% static 'img/question-icon.svg' %} " alt="Icon" />
-                                            </div> Do you offer 24/7 support for services?
-                                        </button>
-                                    </h5>
 
-                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                                        data-parent="#accordion">
-                                        <div class="card-body">
-                                            Yes, we provide IT training tailored to your business needs. Our training is programs cover various IT aspects, our high including software usage, cybersecurity
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                         <div class="faq-col">
@@ -106,7 +107,7 @@
                                     <div id="collapseFour" class="collapse show" aria-labelledby="headingFour"
                                         data-parent="#accordion2">
                                         <div class="card-body">
-                                            Yes, we provide IT training tailored to your business needs. Our training is programs cover various IT aspects, our high including software usage, cybersecurity
+                                            Yes, our team offers expert recovery planning services to ensure your business is prepared for any contingency, minimizing downtime and protecting your data.
                                         </div>
                                     </div>
                                 </div>
@@ -123,27 +124,12 @@
                                     <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
                                         data-parent="#accordion2">
                                         <div class="card-body">
-                                            Yes, we provide IT training tailored to your business needs. Our training is programs cover various IT aspects, our high including software usage, cybersecurity
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="faq-box">
-                                    <h5 class="card-header" id="headingSix">
-                                        <button data-bs-toggle="collapse" data-bs-target="#collapseSix"
-                                            aria-expanded="false" aria-controls="collapseSix">
-                                            <div class="icon">
-                                                <img src="{% static 'img/question-icon.svg' %} " alt="Icon" />
-                                            </div> How can get started with your services?
-                                        </button>
-                                    </h5>
 
-                                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
-                                        data-parent="#accordion2">
-                                        <div class="card-body">
-                                            Yes, we provide IT training tailored to your business needs. Our training is programs cover various IT aspects, our high including software usage, cybersecurity
+                                            Yes! We specialize in efficient, secure AWS cloud management solutions.
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -220,7 +206,7 @@
                         <p>We believe in delivering value that extends  your beyond the immediate project. Our services are designed to provide a long-term benefits.</p>
                         <ul>
                             <li>
-                                <i class="las la-check"></i> PPD Development
+                                <i class="las la-check"></i> Fast Delivery
                             </li>
                             <li>
                                 <i class="las la-check"></i> Quick Response
@@ -251,152 +237,14 @@
                         <h2>Build your project with us, Make it world class</h2>
                         <p>Our projects are born from a passion for innovation that knows no bounds.</p>
                     </div>
-                    <a href="contact.html" class="theme-btn">Book an appointment now</a>
+                    <a href="{% url 'solvifyhub:contact' %}" class="theme-btn">Book an appointment now</a>
 
                 </div>
             </div>
         </section>
 
 
-        <!-- Contact -->
-        <section class="contact-area">
-            <div class="custom-container">
-                <div class="custom-row">
-                    <div class="contact-form-wrap">
-                        <div class="contact-form-body">
-                            <h5 class="section-subtitle">Contact</h5>
-                            <h1 class="section-title">Lets get in touch</h1>
-                            <p>You can reach us anytime via <a href="mailto:bluebase@mail.com">bluebase@mail.com</a></p>
-                            <form action="https://wpriverthemes.com/HTML/synck/assets/mail/contact.php" method="POST" class="contact-form">
-                                <div class="input-row">
-                                    <div class="input-group">
-                                        <label for="first_name">First Name</label>
-                                        <input id="first_name" type="text" name="first_name" placeholder="First Name" />
-                                    </div>
-                                    <div class="input-group">
-                                        <label for="last_name">Last Name</label>
-                                        <input id="last_name" type="text" name="last_name" placeholder="Last Name" />
-                                    </div>
-                                </div>
-                                <div class="input-row">
-                                    <div class="input-group">
-                                        <label for="email">Email</label>
-                                        <input type="email" id="email" name="email" placeholder="Your Email" />
-                                    </div>
-                                </div>
-                                <div class="input-row">
-                                    <div class="input-group phone-number">
-                                        <select class="number-prefix">
-                                            <option value="uk">UK</option>
-                                            <option value="us">US</option>
-                                        </select>
-                                        <label for="phone_number">Phone Number</label>
-                                        <input id="phone_number" type="text" name="phone_number" placeholder="Your Number" />
-                                    </div>
-                                    <div class="input-group">
-                                        <label for="country">Country</label>
-                                        <input type="text" id="homeland" name="country" placeholder="Your Country" />
-                                    </div>
-                                </div>
-                                <div class="input-row">
-                                    <div class="input-group">
-                                        <label for="message">Message</label>
-                                        <textarea name="message" id="message" placeholder="Leave us a message...."></textarea>
-                                    </div>
-                                </div>
-                                <div class="input-row">
-                                    <div class="input-group input-checkbox">
-                                        <input type="checkbox" id="privacy_policy_accept">
-                                        <label for="privacy_policy_accept">You agree to our <a href="#">terms and conditions.</a></label>
-                                    </div>
-                                </div>
 
-                                <div class="input-row">
-                                    <div class="input-group">
-                                        <button id="submit" class="theme-btn">Get Started</button>
-                                    </div>
-                                </div>
-                                <!-- Alert Message -->
-                                <div class="input-row">
-                                    <div class="input-group alert-notification">
-                                        <div id="alert-message" class="alert-msg"></div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-
-                    <div class="contact-experience">
-                        <ul>
-                            <li>
-                                <h1>22+ <span>Years</span></h1>
-                                <p>Field Experience </p>
-                            </li>
-                            <li>
-                                <h1>950+ <span>Projects</span></h1>
-                                <p>Done Around World </p>
-                            </li>
-                            <li>
-                                <h1>99%</h1>
-                                <p>Client Satisfaction</p>
-                            </li>
-                            <li>
-                                <h1>1995+ <span>Year</span></h1>
-                                <p>Established On</p>
-                            </li>
-                            <li>
-                                <h1>2 <span>Mins</span></h1>
-                                <p>Response Time</p>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="contact-infos">
-                        <div class="contact-infos-inner">
-                            <div class="contact-info">
-                                <img src="{% static 'img/support-icon.svg' %} " alt="Support" />
-                                <h3>Contact Info</h3>
-                                <p>
-                                    +1 455 1482 236 <br>
-                                    Bluebase@mail.com
-                                </p>
-                            </div>
-                            <div class="contact-office-info contact-info">
-                                <img src="{% static 'img/map-icon.svg' %} " alt="Map" />
-                                <h3>Visit our office</h3>
-                                <p>16/9, Down Street
-                                    Edinburgh, Scotland
-                                    United Kingdom</p>
-                            </div>
-
-                            <ul class="contact-social-links">
-                                <li>
-                                    <a href="#">
-                                        <i class="iconoir-dribbble"></i> Dribbble
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="iconoir-twitter"></i> Twitter
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="iconoir-instagram"></i> Instagram
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="iconoir-linkedin"></i> linkedin
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
+        {% include 'includes/lets_get_in_touch_form.html' %}
         {% include 'includes/footer.html' %}
         {% endblock %}
