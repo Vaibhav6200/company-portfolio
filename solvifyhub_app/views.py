@@ -1,5 +1,7 @@
-from django.shortcuts import render
-
+from django.shortcuts import redirect, render
+from django.core.mail import send_mail
+from django.conf import settings
+from django.contrib import messages
 
 def index(request):
     return render(request, 'index.html')
@@ -10,6 +12,25 @@ def business_consulting(request):
 
 
 def contact(request):
+    if request.method == "POST":
+        full_name = request.POST.get('full_name')
+        phone_number = request.POST.get('phone_number')
+        email = request.POST.get('email')
+        state = request.POST.get('state')
+        country = request.POST.get('country')
+        message = request.POST.get('message')
+
+        send_mail(
+            subject=mail_subject,
+            message=message,
+            from_email=settings.EMAIL_HOST_USER,
+            recipient_list=[settings.EMAIL_HOST_USER],
+            fail_silently=True,
+        )
+
+        # messages.success(request, "Your Call has been Booked, will get back to you soon")
+        return redirect('solvifyhub:index')
+
     return render(request, 'contact.html')
 
 
