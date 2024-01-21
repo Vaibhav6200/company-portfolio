@@ -36,7 +36,12 @@
     {% block content %}
     {% endblock %}
 
+    <script>
+        function submit_contact_form(){
+            document.getElementById('contact_form').submit();
 
+        }
+    </script>
     <!-- jQuery Frameworks
     ============================================= -->
     <script src="{% static 'js/jquery-3.7.0.min.js' %}"></script>

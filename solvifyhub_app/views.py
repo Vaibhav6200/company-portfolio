@@ -20,6 +20,8 @@ def contact(request):
         country = request.POST.get('country')
         message = request.POST.get('message')
 
+        mail_subject = "Solvify Hub: GOT a LEAD !!!"
+        print("WE are in Contact form")
         send_mail(
             subject=mail_subject,
             message=message,
@@ -27,10 +29,7 @@ def contact(request):
             recipient_list=[settings.EMAIL_HOST_USER],
             fail_silently=True,
         )
-
-        # messages.success(request, "Your Call has been Booked, will get back to you soon")
         return redirect('solvifyhub:index')
-
     return render(request, 'contact.html')
 
 
